@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hometask9</title>
+</head>
+<body>
+
+<script>
+	
+function fizzbuzz (num) {
+	let column = "";
+	for (var i = 1; i <= num; i++) {
+		if (i % 3 === 0 && i % 5 === 0) {
+			column = column +"// " + "fizzbuzz" + "\n";
+		} else if (i % 3 === 0) {
+			column = column +"// " + "fizz" + "\n";
+		} else if (i % 5 === 0) {
+			column = column +"// " + "buzz" + "\n";
+		} else {
+			column = column +"// " + i + "\n";
+		}
+	}
+	return column;
+}
+
+</script>
+
+<script>
+	
+function vowelCounter (string) {
+	let vowelArray = ["a", "e", "i", "o", "u"];
+	let counter = 0;
+	for (var i = 0; i < string.length; i++) {
+		if (vowelArray.includes(string[i])) {
+			counter++;
+		}
+	}
+	return counter;
+}
+
+</script>
+
+<script>
+
+function fibonacci (num) {
+	let arr = [0,1];
+	for (var i = 2; i < num; i++) {
+		arr[i] = arr[i-1] + arr[i-2];
+	}
+	return arr;
+}
+
+</script>
+	
+</body>
+</html>
